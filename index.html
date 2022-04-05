@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dectetor de imagenes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body>
+    <center>
+        <section>
+            <h1>app de reconosimiento de voz</h1>
+            <h3>el modelo puede reconoser estos sonidos </h3>
+            <hr>
+        </section>
+        <p></p>
+        <section>
+            <br>
+            <img src="aliens-01.png" id="alien1" width="300" height="300">
+            <img src="aliens-02.png" id="alien2" width="300" height="300">
+            <img src="aliens-03.png" id="alien3" width="300" height="300">
+            <img src="aliens-04.png" id="alien4" width="300" height="300">
+            <br>
+        </section>
+        <section>
+            <button id="identificar" onclick="identificar()">identificar</button>
+        </section>
+        <br>
+        <h3>sonido</h3>
+        <h3 id="sonido">sonido reconosido</h3>
+        <br>
+        <h3>presision</h3>
+        <h3 id="presision">presision</h3>
+    </center>
+<script src="main.js"></script>
+</body>
+</html>
